@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igra</title>
+    <link rel="stylesheet" href="skocko-igra.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="skocko-igra.js"></script>
+</head>
+<body id="back" onload="popuniTabelu()">
+    <div class="container">
+        <br> <br> <br>
+        <div class=" row">
+            <div class="col-lg-8 offset-md-1 col-12 col-md-11">
+                <table id="pokusaji" class="table text-center table-borderless"></table>
+            </div>
+            <div class="col-lg-3 col-12">
+                <table id="dugmad" class="table table-borderless text-center">
+                    <tr>
+                        <td><button id="new" class="btn btn-dark">Nova igra</button></td>  
+                    </tr>
+                    <tr>
+                        <td><button id="start" class="btn btn-dark">Start</button></td>
+                    </tr>
+                    <tr> 
+                        <td id="brojac">Brojac</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <hr color="black">
+        <div class="row">
+            <div class="col-9 offset-1">
+                <table id="tekuci" class="table text-center table-borderless"></table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

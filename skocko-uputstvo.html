@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skocko-igra.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="skocko-podesavanja.js"></script>
+    <title>Document</title>
+</head>
+<body id="back">
+    <div class="container scroller uputstvo">
+       
+        <div class="row">
+            <div id="uputstvo_naslov" class="col text-center">Uputstvo igre</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+                Igrica skocko je igra znakovima u dva igraca. Cilj igre je pogoditi kombinaciju zadatu od protivnika u najvise 7 pokusaja za maksimalno 60s. 
+                Svakom igracu na raspolaganju je 6 razlicitih znakova:
+            </div>
+        </div>
+        <div class=" row" id="sadrzaj">
+            <div class="col text-center">
+                <img name="ikonice"  src="skocko_dodatno/i0.png">
+                <img name="ikonice"  src="skocko_dodatno/i1.png">
+                <img name="ikonice"  src="skocko_dodatno/i2.png">
+                <img name="ikonice"  src="skocko_dodatno/i3.png">
+                <img name="ikonice"  src="skocko_dodatno/i4.png">
+                <img name="ikonice"  src="skocko_dodatno/i5.png">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+                Na pocetku igre, svaki igrac zadaje kombinaciju od 4 znaka protivnickom igracu. 
+                Kombinacija sadrzi 4 proizvoljna znaka uz mogucnost ponavljanja. 
+                Znak se ubacuje u kombinaciju pritiskom na ikonicu odgovorajuceg znaka. 
+                Dugme <div class="badge badge-info"> random </div> izgenerisace proizvoljni znak.
+                Unesena kombinacija ponistava se pritiskom na <div class="badge badge-light"> ponisti </div>  Kombinacija se potvrdjuje pritiskom na dugme <div class="badge badge-light">potvrdi</div>.
+                Kombinaciju prvo unosi igrac 1, pa igrac 2.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+                Igra pocinje nakon sto oba igraca potvrde kombinacije.
+                Svaki igrac zapocinje igru pritiskom na dugme <div class="badge badge-dark">start</div> 
+                sto startuje stopericu koja odbrojava proisteklo vreme.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+                Igraci igraju poteze naizmenicno. Jedan potez igraca sastoji se u odabiru kombinacije od 4 znaka pritiskom na ikonice sa zeljenim znakom.
+                Zeljena kombinacija se ispisuje u redu koji odgovara tekucem potezu.
+            </div>
+        </div>
+        <div class=" row" id="sadrzaj">
+            <div class="col-4 offset-1 text-center">
+                <img name="ikonice"  src="skocko_dodatno/i1.png">
+                <img name="ikonice"  src="skocko_dodatno/i2.png">
+                <img name="ikonice"  src="skocko_dodatno/i3.png">
+                <img name="ikonice"  src="skocko_dodatno/i4.png">
+                
+            </div>
+            <div class="col-2 text-center my_auto">
+                <button class="btn btn-light">=></button>
+            </div>
+            <div class="col-4 text-center my_auto">
+                <div class="uputstvo_div"></div>
+                <div class="uputstvo_div"></div>
+                <div class="uputstvo_div"></div>
+                <div class="uputstvo_div"></div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+               Pritiskom na dugme <div class="badge badge-light">=></div> proverava se unesena kombinacija.
+               Kvadratici pored prikazuju koliko znakova je pogodjeno i da li su na mestu ili ne.
+               (<div class="uputstvo_div2 crv"></div> oznacava da je neki znak pogodjen i na mestu, a <div class="uputstvo_div2 zut"></div> da je pogodjen i nije na mestu).
+               Igrac predaje potez drugom igracu odmah po proveri kombinacije. 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-justify">
+             Igra se zavrsava u jednom od 3 scenarija: <br>
+             1. Jedan od igraca je pogodio kombinaciju. Prvi igrac koji pogodi je pobednik. <br>
+             2. Oba igraca su istrosili moguce pokusaje. Igra je neresena. <br>
+             3. Jednom igracu je isteklo vreme. Drugi igrac kome je preostalo vremena je pobednik.<br>
+             Nova igra zapocinje pritiskom na dugme <div class="badge badge-dark">nova igra</div> <br>
+             </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col uputstvo_sadrzaj text-center">
+            
+             <button class="btn btn-dark" onclick="zapocni();">zapocni igru</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

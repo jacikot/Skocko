@@ -53,11 +53,106 @@ img{
     margin-top: 10px;
 }
 
-#dugmad{
-    margin-top:100px;
+.uputstvo_div{
+    background-color: lightgray;
+    width:30px;
+    height:30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.uputstvo_div2{
+    width:20px;
+    height:20px;
+    display: inline-block;
+}
+.crv{
+    background-color: red;
+}
+.zut{
+    background-color:yellow;
 }
 
 
 
+#forma{
+    font-size: 30px;
+    font-weight: bold;
+    border-collapse: separate !important;
+    border-spacing: 0 30px !important;
+    margin-left:20px !important;
+}
+
+#forma td{
+    padding:0px !important;
+}
 
 
+
+#sadrzaj{
+    margin-top: 60px;
+}
+
+.scroller{
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 4.5%;
+    padding-top: 0px !important;
+}
+
+html,body{
+    height:96%;
+    width:100%;
+}
+
+.scroller::-webkit-scrollbar{
+    display: block;
+    width:5px;
+}
+
+.scroller::-webkit-scrollbar-track{
+    background: transparent;
+}
+.scroller::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroller::-webkit-scrollbar-track-piece:start{
+    background: transparent;
+    margin-top: 10px;
+}
+.scroller::-webkit-scrollbar-track-piece:end{
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+
+#uputstvo_naslov{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.uputstvo_sadrzaj{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.uputstvo{
+    margin-top: 5% !important;
+    height: 80% !important;
+}
+
+
+#igrac{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.ikonice{
+    cursor: pointer;
+}

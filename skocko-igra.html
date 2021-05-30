@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igra</title>
     <link rel="stylesheet" href="skocko-igra.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="skocko-igra.js"></script>
 </head>
 <body id="back" onload="popuniTabelu()">
-    <div class="container">
-        <br> <br> <br>
-        <div class=" row">
+    <div class="container scroller">
+        <div class=" row ">
             <div class="col-lg-8 offset-md-1 col-12 col-md-11">
                 <table id="pokusaji" class="table text-center table-borderless"></table>
             </div>
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3 col-12 my-auto">
                 <table id="dugmad" class="table table-borderless text-center">
+                    <tr> 
+                        <td id="igrac"></td>
+                    </tr>
                     <tr>
                         <td><button id="new" class="btn btn-dark">Nova igra</button></td>  
                     </tr>
@@ -28,15 +30,17 @@
                         <td><button id="start" class="btn btn-dark">Start</button></td>
                     </tr>
                     <tr> 
-                        <td id="brojac">Brojac</td>
+                        <td id="brojac"></td>
                     </tr>
                 </table>
                 
             </div>
         </div>
-        <hr color="black">
+        
         <div class="row">
+            
             <div class="col-9 offset-1">
+                <hr color="black">
                 <table id="tekuci" class="table text-center table-borderless"></table>
             </div>
         </div>
